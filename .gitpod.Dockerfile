@@ -8,5 +8,6 @@ RUN bash -c "conda init bash"
 RUN zsh -c "conda init zsh"
 
 RUN conda config --add channels conda-forge
+RUN conda config --add channels pytorch
 
 RUN conda update -y --all
